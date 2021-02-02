@@ -22,9 +22,7 @@ wget --mirror -p --convert-links -P ./web URL
 
 说明：
 
-下载整个网站到本地。
-
-–miror:开户镜像下载
+–miror:开启镜像下载
 
 -p:下载所有为了html页面显示正常的文件
 

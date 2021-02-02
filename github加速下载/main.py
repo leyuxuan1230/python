@@ -4,7 +4,7 @@ from tqdm import tqdm
 def get_repositories(url):
     import os
     import shutil
-    path = os.getcwd()+r'\MinGit-2.30.0.2-64-bit\cmd\git.exe'    #获取"bin"文件夹位置
+    path = os.getcwd()+r'\MinGit-2.30.0.2-64-bit\cmd\git.exe'
     os.system('%s init'%(path))    #初始化git
     os.system('%s config --system http.sslverify false'%(path))
     os.system('%s clone %s.git'%(path,url))    #用clone功能下载库

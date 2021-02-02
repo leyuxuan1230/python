@@ -1,14 +1,11 @@
 from playwright import sync_playwright
 import time
 from tqdm import tqdm
+import os
 def get_repositories(url):
-    import os
-    import shutil
     path = os.getcwd()+r'\MinGit-2.30.0.2-64-bit\cmd\git.exe'
-    os.system('%s init'%(path))    #初始化git
     os.system('%s config --system http.sslverify false'%(path))
     os.system('%s clone %s.git'%(path,url))    #用clone功能下载库
-    shutil.rmtree(".git")    #删除".git"文件夹，以免造成错误
     print("下载完成")
 def run(playwright):
     global url
@@ -77,6 +74,3 @@ if __name__ == '__main__':
     y = input('\ngitee密码：')
     while x != 'q' or x != 'Q':
         main()
-
-
-

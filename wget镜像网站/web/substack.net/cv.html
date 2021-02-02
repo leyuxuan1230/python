@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" type="image/png" href="favicon.ico">
+<style>
+body {
+  font-family: monospace;
+  background-color: black;
+  color: white;
+}
+h1 {
+  margin-left: 2ex;
+}
+a:link {
+  color: cyan;
+}
+a:visited {
+  color: magenta;
+}
+.header h1 {
+  margin-right: 2ex;
+}
+.section {
+  display: relative;
+  min-height: 20ex;
+  margin-bottom: 2em;
+}
+.section .label {
+  transform: rotate(-90deg) translate(-10ex,-10ex);
+  width: 20ex;
+  margin-left: 0.5em;
+  margin-top: 1em;
+  background-color: purple;
+  text-align: center;
+}
+.section .label a:link, .section .label a:visited {
+  color: white;
+  text-decoration: none;
+}
+.section .sublabel {
+  background-color: teal;
+  color: purple;
+}
+.section .content {
+  margin-left: 1.5em;
+}
+.section .content .project {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 1em;
+  margin-top: -9px;
+  border: 1px solid transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.section .content .project .img {
+  height: 80px;
+}
+.section .content .project .img img {
+  width: 120px;
+}
+.section .content .project .link a:link, .section .content .project .link a:visited {
+  background-color: #509;
+  padding: 5px;
+  text-decoration: none;
+}
+.section .cv {
+  min-height: 20ex;
+}
+.section .cv li {
+  margin-bottom: 0.5em;
+}
+.section .cv.employment li {
+  margin-bottom: 2em;
+}
+.section .cv .desc {
+  margin-left: 2ex;
+  margin-top: 0.3em;
+  color: cyan;
+}
+.section .cv .tech {
+  display: inline-block;
+  margin-left: 2ex;
+  background-color: purple;
+  color: white;
+  padding: 0.5ex;
+  margin-top: 0.5em;
+}
+
+</style>
+</head>
+<body>
+
+<a name="cv"></a>
+<div class="section">
+<div class="label"><a href="cv.html#cv">cv</a></div>
+<div class="content">
+<div class="header">
+<h1 style="display:inline-block">James Halliday</h1>
+substack@gmail.com
+</div>
+
+<div class="label sublabel"><a href="cv.html#cv-employment">employment</a></div>
+<ul class="cv employment">
+  <li>
+    <div>2017 bits.coop</div>
+    <div class="desc">
+      industrial frontends,
+      CAD for architecture,
+    </div>
+    <div class="desc">
+      custom spatial databases, mapping
+    </div>
+    <div class="tech">webgl,glsl,js,node</div>
+  </li>
+  <li>
+    <div>2014 freelance</div>
+    <div class="desc">
+      web,
+      p2p offline mapping,
+      kappa architecture
+    </div>
+    <div class="tech">js,node,leveldb</div>
+  </li>
+  <li>
+    <div>2011 browserling</div>
+    <div class="desc">
+      cross-browser testing service
+    </div>
+    <div class="tech">js,node,couchdb</div>
+  </li>
+  <li>
+    <div>2009 geographic information network of alaska</div>
+    <div class="desc">
+      mapping tools
+    </div>
+    <div class="tech">ruby,rails,sinatra,js,gdal,postgres</div>
+  </li>
+  <li>
+    <div>2006 arctic region supercomputing center</div>
+    <div class="desc">
+      vr, space weather
+    </div>
+    <div class="tech">c++,python,perl,openscenegraph</div>
+  </li>
+</ul>
+
+<div class="label sublabel"><a href="cv.html#cv-experience">experience</a></div>
+<ul class="cv projects">
+  <li>published <a href="https://github.com/substack">1000+</a>
+    open source libraries and projects</li>
+  <li>
+    <a href="http://lanyrd.com/profile/substack/past/">50+ conference talks</a>
+  </li>
+  <li>browserify, glslify/stackgl, leveldb ecosystems</li>
+  <li>
+    <a href="http://www.digital-democracy.org/blog/osm-p2p/"
+    >offline p2p map database</a>
+    used by indigenous communities in the amazon
+  </li>
+  <li>
+    UART over WebAudio to
+    <a href="https://sudoroom.org/serial-over-webaudio/"
+    >drive an arduino motor shield</a> from the audio jack on a phone
+  </li>
+  <li>
+    <a href="https://sudoroom.org/drawing-with-the-robot-arm/"
+    >drawing svgs with an old industrial robot arm</a>
+  </li>
+  <li>
+    created the first <a href="http://nodeschool.io/">nodeschool</a> workshop
+  </li>
+  <li>
+    software and circuit boards for <a
+    href="https://www.flickr.com/photos/substack/4713292804/"
+    >underwater submersibles</a>
+  </li>
+  <li>
+    <a href="https://spectrum.ieee.org/automaton/robotics/diy/ar-drone-that-infects-other-drones-with-virus-wins-dronegames"
+    >quadcopter drone virus</a>
+  </li>
+  <li>
+    <a href="https://www.flickr.com/photos/substack/3776407468/in/photostream/">
+    virtual mars</a>
+  </li>
+  <li>
+    3D VR backdrop for a theatrical production
+  </li>
+  <li>
+    web audio and webgl live coding.
+    standalone performances and visuals for musicians
+  </li>
+  <li>
+    <a href="https://substack.neocities.org/writeups/spiderfarm-house/"
+    >living</a>
+    <a href="https://substack.neocities.org/writeups/fixing-some-mppt-corrosion/"
+    >off-grid</a>
+  </li>
+  <li>
+    <a href="https://substack.neocities.org/#art">webgl</a>
+  </li>
+</ul>
+</div>
+</div>
+
+<a name="projects"></a>
+<div class="section">
+<div class="label"><a href="cv.html#projects">projects</a></div>
+<div class="content">
+<div class="project">
+  <div class="img">
+    <a href="http://browserify.org"><img
+      style="margin-top:10px;"
+      src="images/browserify.svg" width="200px"></a>
+  </div>
+  <div class="link">
+    <a href="http://browserify.org">browserify</a>
+  </div>
+</div>
+<div class="project">
+  <div class="img">
+    <a href="http://peermaps.org"><img src="images/peermaps.svg"></a>
+  </div>
+  <div class="link">
+    <a href="http://peermaps.org">peermaps</a>
+  </div>
+</div>
+<div class="project">
+  <div class="img">
+    <a href="https://github.com/glslify/glslify"><img src="images/glslify.png"></a>
+  </div>
+  <div class="link">
+    <a href="https://github.com/glslify/glslify">glslify</a>
+  </div>
+</div>
+<div class="project">
+  <div class="img">
+    <a href="https://npmjs.com/~substack"><img style="margin-top:30px;" src="images/npm.svg"></a>
+  </div>
+  <div class="link">
+    <a href="https://npmjs.com/~substack">npm/~substack</a>
+  </div>
+</div>
+<div class="project">
+  <div class="img">
+    <a href="https://github.com/substack?tab=repositories"><img
+      style="margin-top:10px;" src="images/github.svg"></a>
+  </div>
+  <div class="link">
+    <a href="https://github.com/substack?tab=repositories">github/~substack</a>
+  </div>
+</div>
+<div class="project">
+  <div class="img">
+    <a href="https://nodeschool.io/#workshopper-list"><img
+      style="margin-top:20px;" src="images/nodeschool.svg"></a>
+  </div>
+  <div class="link">
+    <a href="https://nodeschool.io/#workshopper-list">nodeschool</a>
+  </div>
+</div>
+<div class="project">
+  <div class="img">
+    <a href="http://cyber.wizard.institute/"><img
+      style="margin-top:20px;" src="images/cwi.svg"></a>
+  </div>
+  <div class="link">
+    <a href="http://cyber.wizard.institute/">cyber wizard institute</a>
+  </div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
